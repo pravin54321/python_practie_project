@@ -1,6 +1,6 @@
-num=int(input("Enter The Number"))
-c=0
-while num!=0:
-    c=c+1
-    num=num%10
-print(c)   
+from barcode import EAN13
+from PIL import Image
+number = '5901234123457'
+my_code = EAN13(number)
+my_code.save('C:/Users/JMS/Desktop/python_ex/barcode.png','new_code')
+
